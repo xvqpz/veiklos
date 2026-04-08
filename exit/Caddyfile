@@ -1,0 +1,11 @@
+{
+	layer4 {
+
+        :587 {
+            route {
+                proxy smtp.gmail.com:587
+            }
+        }
+
+	}
+}

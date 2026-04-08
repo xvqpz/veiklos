@@ -1,0 +1,37 @@
+import "../../components/employee.css";
+
+export default function CommitteePage() {
+  return (
+    <div className="page">
+      <header className="page-header">
+        <div>
+          <h1 className="page-title">Komisijos nario langas</h1>
+        </div>
+      </header>
+
+      <main className="page-content">
+        <section className="card employee-card">
+          <div className="card-body">
+            <h2>Šiame darbalaukyje galėsite:</h2>
+            <ul style={{ paddingLeft: "1.25rem", marginBottom: "1.5rem" }}>
+              <li>Įvertinti veiklas, kurios buvo patvirtinos vadybininko.</li>
+              <li>Peržiūrėti įvertintas veiklas ir pakoreguoti įvertinimą esant reikiamybei.</li>
+              <li>Suskaičiuoti kiekvienos temos balo vertę ir įvertinti darbuotojus.</li>
+              <li>Nustatyti limitus temom ir potemėm.</li>
+            </ul>
+
+            <div>
+              <div className="info-box">
+                <span> Susidūrus su techninėmis kliūtimis parašykite el. laišką adresu:</span>
+                <br />
+                <a href="mailto:vu.veiklu.registravimas@gmail.com" style={{ fontWeight: 600 }}>
+                  vu.veiklu.registravimas@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}

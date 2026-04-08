@@ -1,0 +1,13 @@
+:80 {
+    handle /api/* {
+        reverse_proxy veiklos-backend:4000
+    }
+
+    handle /uploads/* {
+        reverse_proxy veiklos-backend:4000
+    }
+
+    handle {
+        reverse_proxy veiklos-vite:80
+    }
+}

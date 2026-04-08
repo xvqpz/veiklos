@@ -1,0 +1,96 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  padding: 12px var(--space-xl);
+  border-bottom: 1px solid var(--color-border-subtle);
+  background-color: var(--color-surface);
+}
+
+.app-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.app-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.app-brand {
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+  color: var(--color-primary); 
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.app-header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: var(--font-size-sm);
+}
+
+.app-role-block,
+.app-user-block {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.app-role-label,
+.app-user-label {
+  color: var(--color-text-muted);
+}
+
+.app-role-select {
+  padding: 6px 8px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-border-subtle);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-white);
+}
+
+.app-role-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px rgba(120, 0, 63, 0.15);
+}
+
+.app-role-value {
+  font-weight: 500;
+}
+
+.app-user-name {
+  font-weight: 600;
+}
+
+.app-signout {
+  padding: 6px 10px;
+  font-size: var(--font-size-sm);
+}
+
+@media (max-width: 900px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .app-header-left,
+  .app-header-right {
+    flex-wrap: wrap;
+  }
+
+  .app-nav {
+    flex-wrap: wrap;
+  }
+}
